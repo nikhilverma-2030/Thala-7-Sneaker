@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thala 7 Sneaker Store (Payment Page)</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header section and Navigations -->
+    <header class="header">
+            <nav class="navbar">
+                <div class="logo">
+                    <h2>Thala <span class="tagline">7.</span></h2>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#brands">Brands
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </a></li>
+                    <li><a href="#more">More
+                       <i class="ri-arrow-drop-down-line"></i>
+                    </a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                     <div class="nav-icons">
+                        <div class="search-btn">
+                            <i class="ri-search-line"></i>
+                            <input type="text" name="search" placeholder="Search..">
+                        </div>
+                        <div class="cart-box">
+                            <i class="ri-shopping-bag-line"></i>
+                            <span class="valu">0</span>
+                        </div>
+                         <img src="https://i.pravatar.cc/40" alt="profile">
+                     </div>
+            </nav>
+        </header>
+        <!-- Declare fake header -->
+        <div class="fake-header"></div>  
+        <main>
+            <!-- Payment Section -->
+            <section class="payment-section" id="payment-display">
+                <div class="payment-container">
+                    <h4 class="checkout">Checkout</h4>
+                    <div class="payment-contents">
+                        <div class="left-payment-container">
+                            <h2>Contect Details</h2>
+                            <div class="email">
+                                <label for="email-id"> Email ID</label><br>
+                                <input type="email" name="email-id" id="email-id" placeholder="John Doe">
+                            </div>
+                            <h2>Payment</h2>
+                            <div class="payment-mode-section">
+                                <div class="payment-mode">
+                                    <button class="payment-type" id="active">
+                                        <i class="ri-bank-card-line"></i><br>
+                                        <span>Card</span>
+                                    </button>
+                                    <button class="payment-type">
+                                        <i class="ri-bit-coin-line"></i><br>
+                                        <span>Crypto</span>
+                                    </button>
+                                    <button class="payment-type">
+                                        <i class="ri-bank-line"></i><br>
+                                        <span>Bank</span>
+                                    </button>
+                                    <button class="payment-type">
+                                        <i class="ri-more-2-fill"></i><br>
+                                    </button>
+                                </div>
+                                <div class="card">
+                                    <label for="card-number">Card Number</label><br>
+                                    <input type="number" name="card-number" id="card-number" placeholder="John Doe">
+                                </div>                                
+                                <div class="other-inputs">
+                                    <div class="inputs">
+                                        <label for="expiry-date">Expiry</label><br>
+                                        <input type="date" name="expiry-date" id="expiry-date" placeholder="MM/YY">
+                                    </div>
+                                    <div class="inputs">
+                                        <label for="cvc-number">CVC</label><br>
+                                        <input type="password" name="cvc-number" id="cvc-number" placeholder="...">
+                                    </div>
+                                </div>
+                                <div class="other-inputs">
+                                    <div class="inputs">
+                                        <label for="country-name">Country</label><br>
+                                        <select name="country" id="country-name" autocomplete="country">
+                                            <option value="india">India</option>
+                                            <option value="america">America</option>
+                                            <option value="south-africa">South Africa</option>
+                                            <option value="uk">UK</option>
+                                        </select>
+                                    </div>
+                                    <div class="inputs">
+                                        <label for="zip-number">ZIP</label><br>
+                                        <input type="password" name="zip-number" id="zip-number" placeholder="xxxxx">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-container">
+                            <h2 class="order-sum">Order Summary </h2>
+                            <div class="right-container-content" id="content-container-right">
+                                <div class="coupon-apply">
+                                    <label for="coupon-payment">Enter Coupon Code</label><br>
+                                    <input type="text" name="coupon" id="coupon-payment" placeholder="COUPON CODE">
+                                    <button type="submit" class="apply-btn">Apply Coupon</button>
+                                </div>
+                                <div class="coupon-content">
+                                    <div class="total-amount">
+                                        <p>Sub Total</p>
+                                        <p>₹4,700</p>
+                                    </div>
+                                    <div class="total-amount">
+                                        <p>Taxes(If applicable)</p>
+                                        <p>₹999</p>
+                                    </div>
+                                    <div class="total-amount">
+                                        <p>Discount</p>
+                                        <p>₹0</p>
+                                    </div>
+                                    <div class="total-amount" id="total-payment">
+                                        <p>Total</p>
+                                        <p>₹4,999</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btns pay-btn"><p>Pay Now ₹4,999</p></button>
+                            <div class="right-logo">
+                                <img src="https://img.freepik.com/premium-vector/secure-ssl-encryption-logo-secure-connection-icon-vector-illustration-ssl-certificate-icon_526569-865.jpg?w=2000" alt="">
+                                <img src="https://latestlogo.com/wp-content/uploads/2024/01/razorpay-logo.png" alt="">
+                                <img src="https://static.vecteezy.com/system/resources/previews/029/899/733/non_2x/secure-payment-credit-card-icon-with-shield-secure-transaction-stock-illustration-vector.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main> 
+    </body>
+</html>
